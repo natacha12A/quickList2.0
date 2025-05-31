@@ -4,6 +4,11 @@ const items = []
 function addItem(){
     const itemName = document.querySelector("#item").value
 
+    if(itemName === ""){
+        alert("Digite um item Válido!")
+        return
+    }
+
     //objeto
     const item ={
         name: itemName,
